@@ -1,0 +1,36 @@
+{
+    "name": "Auto-filter",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "auto-filter",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/Johnmclane5/Auto-filter",
+    "repository": "https://github.com/Johnmclane5/Auto-filter",
+    "env": {
+        "CONFIG_FILE_URL": {
+            "description": "Your info py URL.",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
